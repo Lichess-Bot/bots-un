@@ -4,6 +4,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 engine:                      # Engine settings.
   dir: "./engines/"          # Directory containing engines, relative to this project.
   name: "fsf_linux"         # Binary name of the engine to use.
+  sfname: "chess-engine"
   Atomic: "fsf_linux" # Binary name of the engine for atomic variant to use. 
   Antichess: "fsf_linux" # Binary name of the engine for antichess variant to use. 
   Crazyhouse: "fsf_linux" # Binary name of the engine for crazyhouse variant to use. 
@@ -11,7 +12,6 @@ engine:                      # Engine settings.
   King of the Hill: "fsf_linux" # Binary name of the engine for koth variant to use. 
   Racing Kings: "fsf_linux" # Binary name of the engine for racing kings variant to use. 
   Three-check: "fsf_linux" # Binary name of the engine for three check variant to use.
-  sfname: "chess-engine"
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
@@ -84,7 +84,7 @@ challenge:                   # Incoming challenges.
   sort_by: "best"            # Possible values: "best" and "first".
   accept_bot: true           # Accepts challenges coming from other bots.
   only_bot: false            # Accept challenges by bots only.
-  max_increment: 180         # Maximum amount of increment to accept a challenge. The max is 180. Set to 0 for no increment.
+  max_increment: 3        # Maximum amount of increment to accept a challenge. The max is 180. Set to 0 for no increment.
   min_increment: 0           # Minimum amount of increment to accept a challenge.
   max_base: 315360000        # Maximum amount of base time to accept a challenge. The max is 315360000 (10 years).
   min_base: 0                # Minimum amount of base time to accept a challenge.
