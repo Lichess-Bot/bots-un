@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./"          # Directory containing engines, relative to this project.
-  name: "chess-engine"         # Binary name of the engine to use.
+  name: "fsf_linux"         # Binary name of the engine to use.
   sfname: "chess-engine"
   Atomic: "fsf_linux" # Binary name of the engine for atomic variant to use. 
   Antichess: "fsf_linux" # Binary name of the engine for antichess variant to use. 
